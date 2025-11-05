@@ -12,6 +12,7 @@ print("1. COUNTER")
 print("=" * 60)
 
 from collections import Counter
+from typing import Any
 
 # Example 1: Counting items in a list
 fruits = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple']
@@ -274,7 +275,7 @@ graph = defaultdict(list)
 edges = [('A', 'B'), ('A', 'C'), ('B', 'C'), ('B', 'D')]
 for start, end in edges:
     graph[start].append(end)
-print(f"Graph: {dict(graph)}")
+print(f"Graph: {dict[Any, list](graph)}")
 print()
 
 # Use Case 3: Task queue (deque)
